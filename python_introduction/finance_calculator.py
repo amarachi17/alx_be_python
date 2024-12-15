@@ -3,7 +3,7 @@ monthly_income = int(input("Enter your monthly income:"))
 monthly_expenses = int(input("Enter your total monthly expenses:"))
 
 # Calculating the monthly savings
-monthly_savings = monthly_expenses - monthly_income
+monthly_savings = monthly_income - monthly_expenses
 
 # Calculating project annual savings
 annual_interest_rate = 0.05
