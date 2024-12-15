@@ -1,5 +1,5 @@
 # Define a variable
-user_age = int(input(f"How old are you?"))
+user_age = int(input("How old are you?"))
 
 # Create a variable to get how old the user would be in 2050
 age = user_age + 27
