@@ -18,18 +18,18 @@ def main():
     # Display the current date and time
     display_current_datetime()
     
-    # # Calculate the future date
-    # calculate_future_date()
+    # Calculate the future date
+    calculate_future_date()
     
-    # print('Thank you for using the date and time calculator.')
+    print('Thank you for using the date and time calculator.')
     
-    # Ask the user if they want to calculate the future date
-    calculate_future_date_choice = input('Do you want to calculate the future date? (yes/no): ')
+    # # Ask the user if they want to calculate the future date
+    # calculate_future_date_choice = input('Do you want to calculate the future date? (yes/no): ')
     
-    if calculate_future_date_choice.lower() == 'yes':
-        calculate_future_date()
-    else:
-        print('Thank you for using the date and time calculator.')
+    # if calculate_future_date_choice.lower() == 'yes':
+    #     calculate_future_date()
+    # else:
+    #     print('Thank you for using the date and time calculator.')
 
 if __name__ == "__main__":
     main()
