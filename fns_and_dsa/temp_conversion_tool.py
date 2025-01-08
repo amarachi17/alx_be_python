@@ -4,15 +4,15 @@ CELSIUS_TO_FAHRENHEIT_FACTOR = 9 / 5 # Factor to convert Celsius to Fahrenheit
 
 def convert_to_celsius(fahrenheit):
     # Convert a temperature from Fahrenheit to Celsius
-    global FAHRENHEIT_TO_CELSIUS_FACTOR
-    celsius = (fahrenheit - 32) * FAHRENHEIT_TO_CELSIUS_FACTOR
-    return round(celsius, 2)
+    # global FAHRENHEIT_TO_CELSIUS_FACTOR
+    return round((fahrenheit - 32) * FAHRENHEIT_TO_CELSIUS_FACTOR, 2)
+    # return round(celsius, 2)
 
 def convert_to_fahrenheit(celsius):
     # Convert a temperature from Celsius to Fahrenheit.
-    global CELSIUS_TO_FAHRENHEIT_FACTOR
-    fahrenheit = (celsius * CELSIUS_TO_FAHRENHEIT_FACTOR) + 32
-    return round(fahrenheit, 2)
+    # global CELSIUS_TO_FAHRENHEIT_FACTOR
+    return round ((celsius * CELSIUS_TO_FAHRENHEIT_FACTOR) + 32, 2)
+    # return round(fahrenheit, 2)
 
 def main():
     print("Temperature Conversion Tool")
