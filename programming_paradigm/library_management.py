@@ -27,16 +27,16 @@ class Library:
     # A class representing a library.
     
     def __init__(self):
-        self.__books = []
+        self._books = []
         
     def add_book(self, book):
         # Add a book to the Library.
         if isinstance(book, Book):
-            self.__books.append(book)
+            self._books.append(book)
         
     def check_out_book(self, title):
         # Check out a book by its title.
-        for book in self.__books:
+        for book in self._books:
             if book.title == title and book.is_available():
                 if book.check_out():
                     print(f"Checked out '{title}' successfully.")
@@ -45,7 +45,7 @@ class Library:
         
     def return_book(self, title):
         # Return a book by its title.
-        for book in self.__books:
+        for book in self._books:
             if book.title == title and not book.is_available():
                 if book.return_book():
                     print(f"Returned '{title}' successfully.")
@@ -54,7 +54,7 @@ class Library:
         
     def list_available_books(self):
         # List all available books in the library.
-        available_books = [book for book in self.__books if book.is_available()]
+        available_books = [book for book in self._books if book.is_available()]
         if available_books:
             for book in available_books:
                 print(f"{book.title} by {book.author}")
