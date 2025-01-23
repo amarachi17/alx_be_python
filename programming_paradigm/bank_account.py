@@ -2,6 +2,7 @@ class BankAccount:
     def __init__(self, initial_balance=0):
         # Initialize the bank account with an optional initial
         self.__account_balance = initial_balance
+
         
     def deposit(self, amount):
         # Add the specified amount to the account balance
